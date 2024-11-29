@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Settings</title>
+</head>
+<body>
+    <header>
+        <h1>Admin Settings</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Message Templates</h2>
+            <form action="save-template.php" method="post">
+                <label for="template-name">Template Name:</label>
+                <input type="text" id="template-name" name="template-name" required><br><br>
+
+                <label for="message-content">Message Content:</label><br>
+                <textarea id="message-content" name="message-content" rows="4" cols="50"></textarea><br><br>
+
+                <button type="submit">Save Template</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>User Roles</h2>
+            <ul>
+                <li>Admin: Full access</li>
+                <li>Employee: Limited access</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Automated Agency System</p>
+    </footer>
+</body>
+</html>

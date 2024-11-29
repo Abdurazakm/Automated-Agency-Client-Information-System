@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration</title>
+</head>
+<body>
+    <header>
+        <h1>Register New Client</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="client-list.html">Client List</a>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-client-data.php" method="post">
+            <label for="name">Client Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+
+            <label for="service">Service Requested:</label>
+            <select id="service" name="service">
+                <option value="consultation">Consultation</option>
+                <option value="project-management">Project Management</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <button type="submit">Register Client</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Automated Agency System</p>
+    </footer>
+</body>
+</html>

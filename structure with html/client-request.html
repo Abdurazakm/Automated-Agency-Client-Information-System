@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Service Request</title>
+</head>
+<body>
+    <header>
+        <h1>Client Service Request</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="client-list.html">Client List</a>
+        </nav>
+    </header>
+    <main>
+        <form action="submit-service-request.php" method="post">
+            <label for="client-name">Client Name:</label>
+            <input type="text" id="client-name" name="client-name" required><br><br>
+
+            <label for="service-status">Service Status:</label>
+            <select id="service-status" name="service-status">
+                <option value="pending">Pending</option>
+                <option value="in-progress">In Progress</option>
+                <option value="completed">Completed</option>
+            </select><br><br>
+
+            <label for="notes">Additional Notes:</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit">Update Service Request</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Automated Agency System</p>
+    </footer>
+</body>
+</html>
