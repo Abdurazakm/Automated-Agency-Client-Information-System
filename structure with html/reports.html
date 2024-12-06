@@ -4,36 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reports</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>System Reports</h1>
-        <nav>
+    <nav>
+        <div class="logo">EASY CALL</div>
+        <div class="links">
             <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-        </nav>
+            <a href="reports.html">My Status</a>
+            <a href="login.html">Admin</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="signup.html">SignUp</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Reports</h1>
     </header>
     <main>
-        <h2>Generate Reports</h2>
-        <form action="generate-report.php" method="post">
-            <label for="report-type">Select Report Type:</label>
-            <select id="report-type" name="report-type">
-                <option value="client-engagement">Client Engagement</option>
-                <option value="message-delivery">Message Delivery</option>
-                <option value="system-performance">System Performance</option>
-            </select><br><br>
-
-            <button type="submit">Generate Report</button>
-        </form>
-
-        <h3>Recent Reports</h3>
-        <ul>
-            <li><a href="client-engagement-report.pdf">Client Engagement Report - October 2024</a></li>
-            <!-- More reports go here -->
-        </ul>
+        <h2>Delivery Statistics</h2>
+        <p>Messages delivered successfully: 95%</p>
     </main>
     <footer>
-        <p>&copy; 2024 Automated Agency System</p>
-    </footer>
-</body>
-</html>
+        <a href="index.html">Home</a

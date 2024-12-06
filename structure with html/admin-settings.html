@@ -4,39 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Settings</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="reports.html">My Status</a>
+        <!-- <a href="client-list.html">Client List</a>  enter to admin page -->
+        <!-- <a href="client-request.html">manual messaging</a> enter to admin page -->
+        <!-- <a href="dashboard.html">dashboard</a> enter to admin page  to get analysis -->
+        <a href="admin-settings.html">Admin</a>
+        <a href="notifications.html">Notifications</a>
+        <a href="signup.html">SignUp</a>
+      </nav>
     <header>
         <h1>Admin Settings</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-        </nav>
     </header>
     <main>
-        <section>
-            <h2>Message Templates</h2>
-            <form action="save-template.php" method="post">
-                <label for="template-name">Template Name:</label>
-                <input type="text" id="template-name" name="template-name" required><br><br>
+        <form action="/save-settings" method="POST">
+            <label for="messageTemplate">Message Template:</label>
+            <textarea id="messageTemplate" name="messageTemplate" rows="4"></textarea><br>
 
-                <label for="message-content">Message Content:</label><br>
-                <textarea id="message-content" name="message-content" rows="4" cols="50"></textarea><br><br>
+            <label for="roles">User Roles:</label>
+            <select id="roles" name="roles">
+                <option value="admin">Admin</option>
+                <option value="employee">Employee</option>
+            </select><br>
 
-                <button type="submit">Save Template</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>User Roles</h2>
-            <ul>
-                <li>Admin: Full access</li>
-                <li>Employee: Limited access</li>
-            </ul>
-        </section>
+            <button type="submit">Save Settings</button>
+        </form>
     </main>
     <footer>
-        <p>&copy; 2024 Automated Agency System</p>
+        <a href="notifications.html">Go to Notifications</a>
     </footer>
 </body>
 </html>

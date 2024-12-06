@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notifications</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Client Notifications</h1>
-        <nav>
+    <nav>
+        <div class="logo">EASY CALL</div>
+        <div class="links">
             <a href="index.html">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-        </nav>
+            <a href="reports.html">My Status</a>
+            <a href="login.html">Admin</a>
+            <a href="notifications.html">Notifications</a>
+            <a href="signup.html">SignUp</a>
+        </div>
+    </nav>
+    <header>
+        <h1>Notifications</h1>
     </header>
     <main>
-        <h2>Notification Logs</h2>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Client</th>
-                    <th>Message Type</th>
-                    <th>Status</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>John Doe</td>
-                    <td>Flight Scheduled</td>
-                    <td>Sent</td>
-                    <td><a href="resend-notification.html">Resend</a></td>
-                </tr>
-                <!-- More rows go here -->
-            </tbody>
-        </table>
+        <ul>
+            <li>Flight Confirmation sent to John Doe on 2024-12-01</li>
+            <li>Biometric Reminder sent to Jane Smith on 2024-11-30</li>
+        </ul>
     </main>
     <footer>
-        <p>&copy; 2024 Automated Agency System</p>
+        <a href="reports.html">View Reports</a>
     </footer>
 </body>
 </html>

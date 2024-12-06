@@ -4,41 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Client List</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Client List</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register Client</a>
-        </nav>
+        <h1>Registered Clients</h1>
     </header>
     <main>
-        <h2>All Registered Clients</h2>
         <table border="1">
             <thead>
                 <tr>
                     <th>Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Service Requested</th>
+                    <th>Passport Number</th>
+                    <th>Flight Date</th>
+                    <th>Status</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>John Doe</td>
-                    <td>johndoe@example.com</td>
-                    <td>+1234567890</td>
-                    <td>Consultation</td>
-                    <td><a href="edit-client.html">Edit</a> | <a href="delete-client.html">Delete</a></td>
+                    <td>Jane Smith</td>
+                    <td>AB123456</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                    <td>
+                        <button>View</button>
+                        <button>Edit</button>
+                        <button>Delete</button>
+                    </td>
                 </tr>
-                <!-- More client rows go here -->
             </tbody>
         </table>
     </main>
     <footer>
-        <p>&copy; 2024 Automated Agency System</p>
+        <a href="register.html">Register New Client</a>
     </footer>
 </body>
 </html>
