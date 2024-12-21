@@ -78,7 +78,7 @@ nav {
     color: black;
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    padding: 10px 20px;
+    padding: 20px 20px;
     z-index: 1000;
     flex-wrap: wrap; /* Allow wrapping for small screens */
 }
@@ -98,7 +98,7 @@ nav a {
 
 nav a:hover {
     background-color: #dfdcdc; /* Slight gray background on hover */
-    border-radius: 15%;
+    border-radius: 10%;
     color: #555;
 }
 
@@ -376,6 +376,7 @@ footer {
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .card-section, .dashboard-container {
+        align-items: center;
         flex-direction: column; /* Stack vertically */
         gap: 20px;
     }
