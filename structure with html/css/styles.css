@@ -33,13 +33,46 @@ main form {
 
 footer {
     position: relative; /* Default behavior for long pages */
+    margin-top: auto; /* Ensures footer stays at bottom for short pages */
+}
+.copyright{
     text-align: center;
     padding: 10px;
     background-color: #333;
     color: white;
     width: 100%;
-    margin-top: auto; /* Ensures footer stays at bottom for short pages */
 }
+/* Contact Info Section */
+.contactinfo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    flex-wrap: wrap; /* Allow wrapping for small screens */
+}
+
+.contactinfo .section {
+    flex: 1;
+    text-align: center;
+}
+
+.contactinfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contactinfo .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.contactinfo .social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
 
 * {
     margin: 0;
@@ -85,6 +118,7 @@ nav {
 
 .small-screen {
     margin-left: auto; /* Push links to the far right */
+    margin-right: 3%;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -195,44 +229,6 @@ header p {
     font-size: 0.9rem;
 }
 
-/* Contact Info Section */
-.contactinfo {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #fff;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
-}
-
-.contactinfo .section {
-    flex: 1;
-    text-align: center;
-}
-
-.contactinfo h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-.contactinfo .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.contactinfo .social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
 
 /* Signup Page */
 .signup-container {
