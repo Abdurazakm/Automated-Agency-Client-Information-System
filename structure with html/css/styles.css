@@ -343,10 +343,39 @@ header p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+#client-register{
+    background-image: url("../images/register.jpg");
+    background-size: cover; /* Optional: make the image cover the element */
+    background-position: center; /* Optional: center the image */
+    background-size: 300px  400px;
+
+}
+#client-list{
+    background-image: url("../images/clientlist.avif");
+    background-size: cover; /* Optional: make the image cover the element */
+    background-position: center; /* Optional: center the image */
+    background-size: 300px  400px;
+
+}
+#Manual-message{
+    background-image: url("../images/messe.png");
+    background-size: cover; /* Optional: make the image cover the element */
+    background-position: center; /* Optional: center the image */
+    background-size: 300px  400px;
+
+}
+#dashboard{
+    background-image: url("../images/dashboard.jpg");
+    background-size: cover; /* Optional: make the image cover the element */
+    background-position: center; /* Optional: center the image */
+    background-size: 200px  300px;
+
 }
 
 .section-admin a {
-    background-color: #007BFF;
+    background-color: #b0b2b5;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
