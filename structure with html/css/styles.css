@@ -229,98 +229,7 @@ header p {
     font-size: 0.9rem;
 }
 
-
-/* Signup Page */
-.signup-container {
-    width: 90%; /* Flexible width for responsiveness */
-    max-width: 500px; /* Maximum width for larger screens */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* Center it horizontally */
-    margin-top: 100px; /* Ensure there's space from the top */
-    position: relative; /* Removed `absolute` to avoid overlap issues */
-}
-
-@media (max-width: 768px) {
-    .signup-container {
-        margin-top: 120px; /* Extra space for smaller screens */
-        padding: 15px; /* Adjust padding for smaller viewports */
-    }
-}
-
-@media (max-width: 480px) {
-    .signup-container {
-        margin-top: 140px; /* More space for very small screens */
-        padding: 10px; /* Compact padding */
-    }
-}
-
-
-.signup-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.signup-container form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.signup-container button {
-    padding: 10px;
-    font-size: 1rem;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.signup-container button:hover {
-    background-color: #0056b3;
-}
-
-.signup-container .login-link {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 0.9rem;
-}
-
-.signup-container .login-link a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.signup-container .login-link a:hover {
-    text-decoration: underline;
-}
+/*  */
 
 /* Dashboard Section */
 .dashboard-container {
@@ -411,9 +320,7 @@ header p {
         height: auto; /* Remove fixed height */
     }
 
-    .signup-container {
-        padding: 10px;
-    }
+
 }
 
 @media (max-width: 480px) {
