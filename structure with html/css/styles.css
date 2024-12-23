@@ -1,9 +1,9 @@
 /* General Styles */
 /* For footer to stay at the bottom */
-html, body {
+html, body {/*setting standard for every web page on the project*/
     height: 100%; /* Ensure full height of the viewport */
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column; 
 }
 
 main {
