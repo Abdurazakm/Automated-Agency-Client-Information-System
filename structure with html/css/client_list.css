@@ -16,7 +16,7 @@ th, td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
-    white-space: nowrap; /* Prevent text wrapping in cells */
+    white-space: nowrap;
 }
 
 th {
@@ -77,7 +77,7 @@ justify-content: space-between;
     }
 
     .Search-bar {
-        justify-content: center; /* Center align the search bar */
+        justify-content: center; 
         width: 100%; /* Full width for smaller screens */
     }
 
