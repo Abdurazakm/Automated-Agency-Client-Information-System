@@ -346,14 +346,14 @@ header p {
 
 }
 #client-register{
-    background-image: url("../images/register.jpg");
+    background-image: url("../images/client_register.jpg");
     background-size: cover; /* Optional: make the image cover the element */
     background-position: center; /* Optional: center the image */
     background-size: 300px  400px;
 
 }
 #client-list{
-    background-image: url("../images/clientlist.avif");
+    background-image: url("../images/client_list.jpg");
     background-size: cover; /* Optional: make the image cover the element */
     background-position: center; /* Optional: center the image */
     background-size: 300px  400px;
@@ -367,7 +367,7 @@ header p {
 
 }
 #dashboard{
-    background-image: url("../images/dashboard.jpg");
+    background-image: url("../images/client_list.jpg");
     background-size: cover; /* Optional: make the image cover the element */
     background-position: center; /* Optional: center the image */
     background-size: 200px  300px;
