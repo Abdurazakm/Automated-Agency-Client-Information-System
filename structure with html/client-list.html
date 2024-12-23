@@ -6,6 +6,7 @@
     <title>Client List</title>
     <link rel="icon" href="images/favicon (1).ico">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/client_list.css"><!--1st change linking with more specicfic css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />     
 </head>
 <body>
@@ -17,41 +18,334 @@
             <input type="checkbox" name="" id="check-box">
             <div class="links">
                 <a href="index.html" style="--i:1">Home</a>
-                <a href="reports.html" style="--i:2">My Status</a>
-                <a href="Admin-login.html" style="--i:3">Admin</a>
-                <a href="notifications.html" style="--i:4">Notifications</a>
-                <a class="signup-nav" href="signup.html" style="--i:5">SignUp</a>
+                <a href="admin-dashboard.html" style="--i:1">Dashboard</a>
             </div>
         </div>
     </nav>
     <header>
-        <h1>Registered Clients</h1>
+        <div class="header-container">
+            <h1>Registered Clients</h1>
+            <!-- Added search bar -->
+            <div class ="Search-bar">
+                <form action="#" method="get">
+                    <input type="search" name="search" placeholder="Search">
+                    <i class="fas fa-search"></i>
+
+                </form>
+            </div>
+        </div>
     </header>
+
     <main>
+        <div class="table-container">
         <table border="1">
             <thead>
                 <tr>
-                    <th>Name</th>
+                    <th>Full Name</th>
+                    <th>Age</th>
                     <th>Passport Number</th>
+                    <th>Nationality</th>
+                    <th>Medical Status</th>
+                    <th>Job Type</th>
+                    <th>Martial Status</th>
+                    <th>Registration Date</th>
                     <th>Flight Date</th>
                     <th>Status</th>
-                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Jane Smith</td>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
                     <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
                     <td>2024-12-20</td>
                     <td>Active</td>
-                    <td>
-                        <button>View</button>
-                        <button>Edit</button>
-                        <button>Delete</button>
-                    </td>
                 </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>Samiya Yusuf</td>
+                    <td>27</td>
+                    <td>AB123456</td>
+                    <td>Ethiopia</td>
+                    <td>Passed</td>
+                    <td>Housemaid</td>
+                    <td>Single</td>
+                    <td>2024-01-10</td>
+                    <td>2024-12-20</td>
+                    <td>Active</td>
+                </tr>
+                
             </tbody>
         </table>
+    </div>
     </main>
     <footer>
         <p class="copyright">&copy; 2024 All Rights Reserved.</p>
