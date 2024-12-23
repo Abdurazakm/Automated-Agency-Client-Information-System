@@ -30,28 +30,40 @@
     </nav>
     <main>
         <form action="/submit-registration" method="POST" id="login-form">
-            <fieldset>
-                <legend>client Information</legend>      
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br>
 
+            <fieldset>
+                <legend>Client Information</legend>
+
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="name" required><br>
+                <label for="mname">Middle Name:</label>
+                <input type="text" id="mname" name="name" required><br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="name" required><br>
+                <label for="contact">Phone Number:</label>
+                <input type="tel" id="contact" name="contact" required><br>
+            </fieldset>
+
+            <fieldset>
                 <label for="passport">Passport Number:</label>
                 <input type="text" id="passport" name="passport" required><br>
-
-                <label for="contact">Contact Info:</label>
-                <input type="text" id="contact" name="contact" required><br>
-
-                <label for="flight">Flight Date:</label>
-                <input type="date" id="flight" name="flight"><br>
-
-                <label for="biometric">Biometric Date:</label>
-                <input type="date" id="biometric" name="biometric"><br>
-
-                <label for="medical">Medical Checkup Date:</label>
-                <input type="date" id="medical" name="medical"><br>
+                <label for="nationality">Nationality:</label>
+                <input type="text" id="nationality" name="nationality" required><br>
+                <label for="position">Nationality:</label>
+                <input type="text" id="position" name="position" required><br>
+                <label for="employee_type">Employee type:</label>
+                <input type="text" id="employee_type" name="employee_type" required><br>
+                
+                <label for="mstatus">Martial status:</label>
+                <fieldset>
+                    <input type="radio" id="mstatus" name="mstatus" value="Married" required> Married
+                    <input type="radio" id="mstatus" name="mstatus" value="Not-Married" required> Not-Married<br>
+                </fieldset>
+    
 
                 <button type="submit">Register Client</button>
             </fieldset>
+            
         </form>
     </main>
     <footer>
