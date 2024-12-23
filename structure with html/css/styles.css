@@ -87,7 +87,7 @@ body {
 }
 
 img, video {
-    max-width: 100%; /* Ensure media scales */
+    max-width: 100%; 
     height: auto;
 }
 
@@ -112,7 +112,7 @@ nav {
     justify-content: flex-start; /* Align items to the left */
     padding: 20px 20px;
     z-index: 1000;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
+    flex-wrap: wrap;
 }
 
 .small-screen {
