@@ -430,23 +430,8 @@ header p {
     }
 }
 
-/* #login-form */
-#login-form {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
-    width: 100%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    margin-top: 20px;
 
-}
-.forget{
-    margin-top: 30px;
-    text-align: center;
-}
+
 
 fieldset {
     border: none;
@@ -589,11 +574,6 @@ body{
         font-size: 1.5rem;
     }
 
-    #login-form {
-        width: 90%;
-        max-width: 350px;
-        padding: 10px;
-    }
 
     button {
         font-size: 0.9rem;

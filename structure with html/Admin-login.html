@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Login</title>
   <link rel="icon" href="images/favicon (1).ico">
+  <link rel="stylesheet" href="css/login.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />     
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-  <nav>
-    <div class="logo">
-        <a href="index.html">EASY CALL</a>
-</nav>
-  <header>
-    <!-- <h1>Admin Login</h1> -->
-  </header>
+
   <main>
+
+    <div class="x-icon"><a href="index.html"><b><i class="fa-solid fa-x"></i></b></a></div>
+
     <form id="login-form">
       <fieldset>
         <legend>Admin Login</legend>
-      <input type="text" id="username" name="username" placeholder="Username" required><br>
 
-      <input type="password" id="password" name="password" placeholder="Password" required><br>
-      
-      <button type="submit">Login</button>
-    </fieldset>
-    <p class="forget"><a  href="#">Forget password?</a></p>
-    <p>EASY CALL</p>
+        <input type="text" id="username" name="username" placeholder="Username" required><br>
+        <input type="password" id="password" name="password" placeholder="Password" required><br>
+
+        <button type="submit">Login</button>
+      </fieldset>
+
+      <p class="forget"><a href="#">Forget password?</a></p>
     </form>
   </main>
   <footer>
@@ -36,7 +36,7 @@
 
   <script>
     // Simple front-end validation
-    document.getElementById('login-form').addEventListener('submit', function(e) {
+    document.getElementById('login-form').addEventListener('submit', function (e) {
       e.preventDefault();
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
@@ -51,4 +51,5 @@
     });
   </script>
 </body>
+
 </html>
