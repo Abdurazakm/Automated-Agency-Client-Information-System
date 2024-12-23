@@ -1,0 +1,89 @@
+.table-container {
+    width: 95%;
+    overflow-x: auto; 
+    margin: 2rem auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+table {
+    width: 100%; /* Ensure the table takes full width of the container */
+    border-collapse: collapse;
+    min-width: 600px; /* Set a minimum width to maintain readability */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text wrapping in cells */
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    position: sticky; /* Keeps table headers visible while scrolling horizontally */
+    top: 0;
+    z-index: 2; /* Ensures the header is above other elements */
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+
+
+.header-container{
+display:flex;
+justify-content: space-between;
+}
+
+.Search-bar input{
+    padding: 0.4rem;
+    border: none;
+}
+.Search-bar{
+    display: flex;
+    align-items: center;
+
+}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem; /* Reduce font size for smaller screens */
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 0.8rem; /* Further reduce font size for very small screens */
+    }
+    th, td {
+        padding: 6px;
+    }
+    td {
+        white-space: normal; /* Allow text wrapping for very narrow screens */
+        word-wrap: break-word; /* Ensures long text wraps within the cell */
+    }
+}
+/* Responsive Adjustments for header and searching bar */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .Search-bar {
+        justify-content: center; /* Center align the search bar */
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .Search-bar input {
+        max-width: 100%; 
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
