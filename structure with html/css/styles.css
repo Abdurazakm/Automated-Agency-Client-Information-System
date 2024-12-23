@@ -47,7 +47,7 @@ footer {
     justify-content: space-around;
     padding: 20px;
     background-color: #fff;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
+    flex-wrap: wrap; 
 }
 
 .contactinfo .section {
