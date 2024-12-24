@@ -1,6 +1,10 @@
 .x-icon{
     text-align: right;
     margin: 2%;
+    }
+.x-icon :hover{
+    color: red;
+
 }
 
 #login-form {

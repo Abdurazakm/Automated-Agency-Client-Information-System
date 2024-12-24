@@ -1,3 +1,9 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 html, body {
     height: 100%; 
     display: flex;
@@ -5,11 +11,18 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #eaf6f6;
+}
+
+
 main {
     flex: 1; /* Allow main content to grow and push footer down */
 }
 main h2 {
-    /* font-size: 2.5rem; */
     margin-bottom: 10px;
     margin-left: 20px;
 }
@@ -19,19 +32,9 @@ main p {
     margin-bottom: 20px;
     margin-left: 20px;
 }
-main ul {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-main form {
-    margin-left: 20px;
-    margin-bottom: 20px;
-
-}
 
 footer {
-    position: relative; /* Default behavior for long pages */
+    position: relative; /* Default width control behavior for long pages */
     margin-top: auto; /* Ensures footer stays at bottom for short pages */
 }
 .copyright{
@@ -71,28 +74,8 @@ footer {
     width: 24px;
     height: 24px;
 }
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #eaf6f6;
-}
-
-img, video {
-    max-width: 100%; 
-    height: auto;
-}
-
 a {
-    text-decoration: none;
+    text-decoration: none;  /*remove underline and so from links*/
     color: #333;
 }
 
@@ -125,13 +108,12 @@ nav {
 
 nav a {
     color: black; /* Ensure links are black */
-    text-decoration: none;
     padding: 10px 20px;
 }
 
 nav a:hover {
     background-color: #dfdcdc; /* Slight gray background on hover */
-    border-radius: 10%;
+    border-radius: 10px;
     color: #555;
 }
 
@@ -157,23 +139,18 @@ header p {
     margin-bottom: 20px;
 }
 
-
-    
 .login-button a {
     display: inline-block;
     padding: 10px 20px;
     background-color: #00060c;
     color: white;
-    border-radius: 15%;
+    border-radius: 10px;
     font-size: 1rem;
 }
 .login-button a:hover{
     background-color: white;
     color: #00060c;
 }
-
-
-
 
 /* Image Section */
 .image-section {
@@ -194,7 +171,7 @@ header p {
     padding: 20px;
     background-color: #f9f9f9;
     flex-wrap: wrap; /* Allow wrapping for small screens */
-    gap: 20px;
+    gap: 10px;
 }
 
 .card {
@@ -233,7 +210,6 @@ header p {
 /* Dashboard Section */
 .dashboard-container {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: calc(80vh - 60px); /* Full height minus navigation bar height */
@@ -252,7 +228,12 @@ header p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.section-admin:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 10px rgba(72, 71, 71, 0.9), 
+                0 6px 6px rgba(53, 53, 53, 0.8); /* Depth for 3D look */
 }
 #client-register{
     background-image: url("../images/client_register.jpg");
@@ -309,18 +290,11 @@ background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
 text-decoration: none;
 }
 
-
-.section-admin:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 0 10px rgba(72, 71, 71, 0.9), 
-                0 6px 6px rgba(53, 53, 53, 0.8); /* Depth for 3D look */
-}
-
 .signup-nav {
-    padding: 8px;
+    padding: 10px;
     background-color: black;
     color: #fff;
-    border-radius: 15%;
+    border-radius: 7px;
 }
 
 
