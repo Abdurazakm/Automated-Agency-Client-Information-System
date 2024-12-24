@@ -616,4 +616,215 @@ justify-content: space-between;
         margin-bottom: 10px;
     }
 }
+/* manual message styling or client request styling */
+.main-message{
+    background-color:rgb(230, 230, 230);
+    margin:5%;
+    padding: 2%;
+    box-shadow: 0 0 5px rgb(167, 166, 166);
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    align-items: center;
+
+}
+
+/* separate each form */
+.manual_data{            
+    margin: 2%;
+}   
+.divisions{
+    background-color: white;
+    margin: 5%;
+    padding: 4%;
+    display: flex;
+    box-shadow: 0 0 5px rgb(167, 166, 166);
+    border-radius: 10px;
+    
+}
+.dateandtime{
+    padding: 10px;
+    margin:auto auto 1rem;
+    width: 60%;
+}
+.messages{
+    background-color: white;
+    display: grid;
+    margin: 5%;
+    box-shadow: 0 0 5px rgb(167, 166, 166);
+    border-radius: 10px;
+
+}
+/* styling my status */
+
+.wholereport{
+    margin:5%;
+    padding:1%;
+    background-color:rgb(230, 230, 230);
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1.5fr;
+    
+}
+
+.value{
+    font-size: 20px;
+    font-weight: bold;
+}
+.data_card_sections{
+    margin:10px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px rgb(167, 166, 166);
+    border-radius: 5px;
+}
+
+.section2{
+    margin-top: 20%;
+}
+/* reports styling */
+/* General Styling for Sections */
+.dashboard-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    font-family: Arial, sans-serif;
+}
+
+/* Section Headings */
+.dashboard-section h2 {
+    margin-bottom: 15px;
+    color: #333; /* Dark text */
+    font-size: 1.5rem;
+    border-bottom: 2px solid #3498db; /* Blue border */
+    padding-bottom: 5px;
+}
+
+/* Lists Styling */
+.dashboard-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.dashboard-section ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 30px; /* Space for icons */
+    font-size: 1rem;
+    color: #555; /* Slightly dark gray text */
+}
+
+/* Font Awesome Icon as Bullet */
+.dashboard-section ul li::before {
+    content: '\f058'; /* Circle check icon */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #3498db; /* Blue icon */
+    font-size: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Total Clients */
+.dashboard-section p {
+    font-size: 1.2rem;
+    color: #2d572c; /* Green text */
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+}
+/* styling of notification */
+.notificationarticles{
+    background-color: white;
+    margin:15%;
+    padding: 20px;
+    border-radius: 5%;
+
+    box-shadow: 0 0 10px rgb(39, 38, 38);
+}
+
+.notif-h1{
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px;
+    background-color:rgb(200, 217, 241);
+    margin-bottom: 15px;
+}
+
+.headh2{
+    color:blue;
+}
+
+hr{
+    border-color: brown;
+    margin:10px;
+}
+
+.notifimages{
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+/* styling register-clients */
+form{
+    background-color: white;
+    width: 60%;
+    padding: 5%;
+
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+}
+#formcollection{
+    width: 100%;
+}
+
+.submitbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.registerform{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+
+}
+.inside-registerform{
+    border-radius: 5px;
+    width: 60%;
+    padding: 5%;
+    margin-bottom: 5%;
+    background-color:rgb(230, 230, 230);
+    box-shadow: 0 0 5px rgb(131, 129, 129);
+}
+#contact{
+    padding: 12px;
+    width:100%;
+    border-radius: 5px;
+    border-color: rgb(201, 199, 199);
+    border-width:1px;
+}
+
+
+@media (max-width: 768px) {
+    .registerform {
+        flex-direction: column; /* Stack sections vertically */
+        gap: 1rem; /* Add spacing between stacked sections */
+    }
+
+    .inside-registerform {
+        width: 100%; 
+    }
+    
+}
+
 
